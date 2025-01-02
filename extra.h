@@ -131,6 +131,7 @@ static void log_window(mu_Context *ctx) {
       mu_set_focus(ctx, ctx->last_id);
       submitted = 1;
     }
+
     if (mu_button(ctx, "Submit")) { submitted = 1; }
     if (submitted) {
       write_log(buf);
